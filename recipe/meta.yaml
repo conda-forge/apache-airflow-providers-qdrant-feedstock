@@ -22,9 +22,9 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - apache-airflow >=2.10.0
     - qdrant-client >=1.10.1
     - portalocker >=2.8.1
-    - apache-airflow >=2.10.0
 
 test:
   imports:
