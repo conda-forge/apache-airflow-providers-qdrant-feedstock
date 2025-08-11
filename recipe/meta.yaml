@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-qdrant" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_qdrant-{{ version }}.tar.gz
-  sha256: 11ab3a22d81adcf0f7c70d7a46004400e0e888718643e91574489ae402eeaacc
+  sha256: dc6fa8307c60173c1e9354b673382a7e794400cac2b6004f5f1d5ba8a2695c7d
 
 build:
   noarch: python
@@ -23,8 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
-    - qdrant-client >=1.10.1
-    - portalocker >=2.8.1
+    - qdrant-client >=1.15.1
 
 test:
   imports:
