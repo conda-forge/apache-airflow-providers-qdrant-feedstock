@@ -24,7 +24,6 @@ requirements:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - qdrant-client >=1.15.1
-    - portalocker >=2.8.1
 
 test:
   imports:
