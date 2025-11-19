@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-qdrant" %}
-{% set version = "1.4.3" %}
-{% set python_min = "3.10" %}
+{% set version = "1.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_qdrant-{{ version }}.tar.gz
-  sha256: dc6fa8307c60173c1e9354b673382a7e794400cac2b6004f5f1d5ba8a2695c7d
+  sha256: 36b81847ee751fe93ac20f329792419ba53bedbc4c198c1834234ecab01292dd
 
 build:
   noarch: python
@@ -23,6 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
+    - apache-airflow-providers-common-compat >=1.8.0
     - qdrant-client >=1.15.1
 
 test:
@@ -38,7 +38,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-qdrant for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/qdrant/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-qdrant/stable/index.html
   dev_url: https://github.com/apache/airflow/
