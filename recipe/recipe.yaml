@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-qdrant
-  version: 1.5.4
+  version: "1.5.4"
 
 package:
   name: ${{ name|lower }}
@@ -25,6 +25,7 @@ requirements:
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
     - qdrant-client >=1.17.1
+
 tests:
   - python:
       imports:
