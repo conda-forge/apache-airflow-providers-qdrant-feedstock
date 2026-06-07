@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-qdrant
-  version: "1.5.5"
+  version: "1.5.6"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_qdrant-${{ version }}.tar.gz
-  sha256: 93d91ee441ccc916b8abe1a222a16faf5ef3fa2c2545715004a93da06a6bb01c
+  sha256: d95639219bdc12ca8decf3cd7ba5b2c152de1e851e838c49b250f04891a5c24f
 
 build:
   noarch: python
